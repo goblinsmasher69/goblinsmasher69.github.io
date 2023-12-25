@@ -1,0 +1,27 @@
+*{
+    background-color: #222222;
+    letter-spacing: 4px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.header{
+    font-family: 'Lexend',sans-serif;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+.paragraph{
+    font-family: 'Lexend',sans-serif;
+    color: white;
+    font-size: 16px;
+}

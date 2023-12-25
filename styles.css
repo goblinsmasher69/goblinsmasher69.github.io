@@ -1,0 +1,96 @@
+*{
+    background-color: #222222;
+    letter-spacing: 4px;
+    color: white;
+}
+
+.header{
+    font-family: 'Lexend',sans-serif;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+.buttonContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.btn1{
+    width: 300px;
+    height: 100px;
+    border: none;
+    color: white;
+    background-color: #444444;
+    border-radius: 5px;
+    transition: ease-out 0.3s;
+    font-size: 1rem;
+    outline: none;
+    font-family: 'Lexend',sans-serif;
+    margin-bottom: 2rem;
+}
+
+.btn1:hover{
+    box-shadow: inset /* width */ 300px 0 0 0 #666666;
+    cursor: pointer;
+}
+
+.btn2{
+    width: 300px;
+    height: 100px;
+    border: none;
+    color: white;
+    background-color: #444444;
+    border-radius: 5px;
+    transition: ease-out 0.3s;
+    font-size: 18px;
+    outline: none;
+    font-family: 'Lexend',sans-serif;
+    margin-bottom: 2rem;
+}
+
+.btn2{
+    width: 300px;
+    height: 100px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    transition: ease-out 0.3s;
+    font-size: 18px;
+    outline: none;
+
+    position: relative;
+    z-index: 1;
+}
+
+.btn2:hover{
+    cursor: pointer;
+}
+
+.btn2:before{
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #666666;
+    border-radius: 5px;
+}
+
+.btn2:hover::before{
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
